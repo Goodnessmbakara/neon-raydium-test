@@ -75,7 +75,7 @@ DEBUG=hardhat:*,hardhat-ethers:* npx hardhat test ./test/composability/raydium.t
 ### 2. Contract Deployment
 Successfully deployed the Raydium Program contract:
 - **CallRaydiumProgram**: `0x4C40C0d12E281DA0F11DEc56DA1901053B75e4BF`
-  - [Deployment Transaction](https://neonscan.org/tx/0x3dce1978f5c0f722ec1590286f4a77808b19419bd336ae975399012e08e58512)
+  - [Deployment Transaction](https://neon-devnet.blockscout.com/tx/0x3dce1978f5c0f722ec1590286f4a77808b19419bd336ae975399012e08e58512)
 
 ### 3. Test Environment Setup
 - Network: Neon EVM Devnet
@@ -94,17 +94,17 @@ Successfully tested the following operations:
 1. **Pool Creation**
    - Created pool with WSOL and custom token
    - Pool ID: `0x45f8f3a0b589a75c6c5b95a9f606e652458709c116eed99b24f1c3432a18e41a`
-   - [Transaction](https://neonscan.org/tx/0x3dce1978f5c0f722ec1590286f4a77808b19419bd336ae975399012e08e58512)
+   - [Transaction](https://neon-devnet.blockscout.com/tx/0x3dce1978f5c0f722ec1590286f4a77808b19419bd336ae975399012e08e58512)
 
 2. **Liquidity Management**
-   - Added liquidity: [Transaction](https://neonscan.org/tx/0x79432db3389ce9c30ac51ba6cf9bedf61d45f016c729ab19abd6fff6173b94bf)
-   - Withdrew liquidity: [Transaction](https://neonscan.org/tx/0xd36d10099b8b575869e3e1b04efd055f4c897018b887335200ca239ce8c002fe)
-   - Locked liquidity with metadata: [Transaction](https://neonscan.org/tx/0x5a1f56a358a85c53b9f426a6e75e3e9efedee0a043498cf2416b80d617e12dac)
+   - Added liquidity: [Transaction](https://neon-devnet.blockscout.com/tx/0x79432db3389ce9c30ac51ba6cf9bedf61d45f016c729ab19abd6fff6173b94bf)
+   - Withdrew liquidity: [Transaction](https://neon-devnet.blockscout.com/tx/0xd36d10099b8b575869e3e1b04efd055f4c897018b887335200ca239ce8c002fe)
+   - Locked liquidity with metadata: [Transaction](https://neon-devnet.blockscout.com/tx/0x5a1f56a358a85c53b9f426a6e75e3e9efedee0a043498cf2416b80d617e12dac)
 
 3. **Swap Operations**
-   - Input swap: [Transaction](https://neonscan.org/tx/0x2220624710eabaf6ba3be1879e91a729bb1e7927394d694f415ed361c62a6c88)
-   - Output swap: [Transaction](https://neonscan.org/tx/0xc713c011d7e9193d3906994e78ab900dda97e16c69840cc7adf744317ee9c376)
-   - Fee collection: [Transaction](https://neonscan.org/tx/0x274f0701b1d3a17b1b82a6d72c0ca1f2a499da4e87e4d778f5ebd634276fb213)
+   - Input swap: [Transaction](https://neon-devnet.blockscout.com/tx/0x2220624710eabaf6ba3be1879e91a729bb1e7927394d694f415ed361c62a6c88)
+   - Output swap: [Transaction](https://neon-devnet.blockscout.com/tx/0xc713c011d7e9193d3906994e78ab900dda97e16c69840cc7adf744317ee9c376)
+   - Fee collection: [Transaction](https://neon-devnet.blockscout.com/tx/0x274f0701b1d3a17b1b82a6d72c0ca1f2a499da4e87e4d778f5ebd634276fb213)
 
 ### 6. Test Results
 Successfully ran 8 tests covering all core functionalities:
