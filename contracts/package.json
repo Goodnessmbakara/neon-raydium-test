@@ -1,0 +1,40 @@
+{
+  "name": "@neonevm/call-solana",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Neon Labs",
+  "contributors": [
+    "https://twitter.com/mnedelchev_",
+    "maxpolizzo@gmail.com"
+  ],
+  "description": "Solidity libraries for composability with Solana programs through NeonEVM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neonevm/neon-contracts/tree/dev/solidity-composability-libraries/contracts.git"
+  },
+  "homepage": "https://neonevm.org/developers",
+  "files": [
+    "/README.md",
+    "/package.json",
+    "/composability/libraries/*.sol",
+    "/composability/libraries/**/*.sol",
+    "/composability/libraries/**/*.md",
+    "/precompiles/ICallSolana.sol",
+    "/precompiles/QueryAccount.sol",
+    "/utils/CallSolanaHelperLib.sol",
+    "/utils/SolanaDataConverterLib.sol",
+    "!/composability/*.sol",
+    "!/composability/mock-contracts/*",
+    "!/mocks/*",
+    "!/oracles/*",
+    "!/token/*"
+  ],
+  "keywords": [
+    "solidity",
+    "solana",
+    "neon",
+    "evm",
+    "ethereum",
+    "library"
+  ]
+}
