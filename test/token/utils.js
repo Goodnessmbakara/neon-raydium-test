@@ -309,14 +309,14 @@ const utils = {
         }
     },
     airdropNEON: async function(address) {
-        const postRequestNeons = await fetch(config.neon_faucet[globalOptions.network].url, {
+        const postRequestNeons = await fetch('https://api.neonfaucet.org/request_neon', {
             method: 'POST',
-            body: JSON.stringify({"amount": parseInt(config.neon_faucet[globalOptions.network].min_balance), "wallet": address}),
+            body: JSON.stringify({"amount": 100, "wallet": address}),
             headers: { 'Content-Type': 'application/json' }
-        })
-        console.log('Airdrop NEONs to', address)
+        });
+        console.log('Airdrop NEONs to', address);
 
-        await this.asyncTimeout(1000)
+        await this.asyncTimeout(1000);
     },
     airdropSOL: async function(account) {
         let postRequest = await fetch(config.svm_node[globalOptions.network], {

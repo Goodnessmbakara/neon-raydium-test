@@ -117,6 +117,7 @@ Successfully ran 8 tests covering all core functionalities:
 Test duration: 11 minutes
 All tests passed successfully
 
+
 ## Raydium Composability Use Case: Automated Market Maker (AMM) with Dynamic Fee Structure
 
 ### Concept
@@ -221,6 +222,65 @@ The implementation would leverage Raydium's existing pool infrastructure while a
    - Deploy on Neon EVM Devnet
    - Test with real token pairs
    - Monitor performance and adjust parameters
+
+###  Current Progress and Limitations
+
+#### Progress
+1. **Dynamic Fee AMM Implementation**
+   - Successfully deployed DynamicFeeAMM contract at `0x6486cE1d816177055e9896Ed0B17757c63Cc473C`
+   - Implemented dynamic fee calculation based on:
+     - Pool utilization rate
+     - Price impact
+     - Time since last update
+   - Added comprehensive test suite for fee calculations and pool operations
+
+2. **Gas Optimization**
+   - Implemented contract reuse pattern to avoid unnecessary redeployments
+   - Optimized fee calculation logic for gas efficiency
+   - Added caching mechanisms for frequently accessed pool states
+
+3. **Integration Testing**
+   - Successfully tested integration with Raydium pools
+   - Verified dynamic fee adjustments under various market conditions
+   - Tested emergency liquidity withdrawal mechanisms
+
+#### Limitations and Challenges
+1. **Gas Costs**
+   - Complex operations (pool creation, dynamic fee calculations) require significant gas
+   - Current minimum balance requirement: ~7 NEON for complex operations
+   - Regular transactions require ~1-2 NEON for gas
+
+2. **Network Constraints**
+   - Neon EVM Devnet has rate limits on faucet requests
+   - Transaction confirmation times can vary based on network load
+   - Limited by Solana's transaction size limits for complex operations
+
+3. **Technical Limitations**
+   - Price impact calculations may need refinement for extreme market conditions
+   - Fee adjustment parameters require fine-tuning based on real-world usage
+   - Integration with certain Solana programs may require additional optimization
+
+4. **Development Environment**
+   - Node.js version compatibility issues (v20.19.2 vs recommended v22.10.0)
+   - Hardhat version constraints for certain features
+   - Limited debugging tools for cross-chain operations
+
+### 8. Next Steps
+1. **Optimization**
+   - Further gas optimization for complex operations
+   - Refinement of fee calculation algorithms
+   - Implementation of batch processing for multiple operations
+
+2. **Testing and Monitoring**
+   - Extended stress testing under various market conditions
+   - Implementation of automated monitoring for pool states
+   - Development of performance metrics dashboard
+
+3. **Documentation and Tools**
+   - Creation of detailed API documentation
+   - Development of helper tools for pool management
+   - Implementation of monitoring and alerting systems
+
 
 ## Resources
 

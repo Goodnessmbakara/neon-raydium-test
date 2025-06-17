@@ -87,8 +87,8 @@ const config = {
       gasMultiplier: 2,
       maxFeePerGas: '10000000000000',
       maxPriorityFeePerGas: '5000000000000',
-      timeout: 300000,
-      retries: 5,
+      timeout: 600000,
+      retries: 10,
       verify: {
         etherscan: {
           apiKey: "test"
@@ -100,7 +100,7 @@ const config = {
       gas: "auto",
       gasPrice: "auto",
       confirmations: 1,
-      pollingInterval: 1000
+      pollingInterval: 2000
     },
     neonmainnet: {
       type: "http",
